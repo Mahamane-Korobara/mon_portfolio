@@ -1,0 +1,41 @@
+{
+    "name": "Skill",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Nom de la comp\u00e9tence"
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "frontend",
+                "backend",
+                "database",
+                "devops",
+                "tools",
+                "design"
+            ],
+            "description": "Cat\u00e9gorie de la comp\u00e9tence"
+        },
+        "level": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Niveau de ma\u00eetrise (0-100)"
+        },
+        "icon": {
+            "type": "string",
+            "description": "Nom de l'ic\u00f4ne"
+        },
+        "color": {
+            "type": "string",
+            "description": "Couleur associ\u00e9e"
+        }
+    },
+    "required": [
+        "name",
+        "category",
+        "level"
+    ]
+}

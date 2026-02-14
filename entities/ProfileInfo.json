@@ -1,0 +1,67 @@
+{
+    "name": "ProfileInfo",
+    "type": "object",
+    "properties": {
+        "full_name": {
+            "type": "string",
+            "description": "Nom complet"
+        },
+        "title": {
+            "type": "string",
+            "description": "Titre professionnel"
+        },
+        "bio": {
+            "type": "string",
+            "description": "Biographie courte"
+        },
+        "bio_long": {
+            "type": "string",
+            "description": "Biographie d\u00e9taill\u00e9e"
+        },
+        "avatar_url": {
+            "type": "string",
+            "description": "URL de la photo de profil"
+        },
+        "email": {
+            "type": "string",
+            "description": "Email de contact"
+        },
+        "phone": {
+            "type": "string",
+            "description": "T\u00e9l\u00e9phone"
+        },
+        "location": {
+            "type": "string",
+            "description": "Localisation"
+        },
+        "github_url": {
+            "type": "string"
+        },
+        "linkedin_url": {
+            "type": "string"
+        },
+        "twitter_url": {
+            "type": "string"
+        },
+        "cv_url": {
+            "type": "string",
+            "description": "URL du CV t\u00e9l\u00e9chargeable"
+        },
+        "years_experience": {
+            "type": "number",
+            "description": "Ann\u00e9es d'exp\u00e9rience"
+        },
+        "projects_completed": {
+            "type": "number",
+            "description": "Nombre de projets compl\u00e9t\u00e9s"
+        },
+        "clients_satisfied": {
+            "type": "number",
+            "description": "Clients satisfaits"
+        }
+    },
+    "required": [
+        "full_name",
+        "title"
+    ]
+}

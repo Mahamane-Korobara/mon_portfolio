@@ -1,0 +1,37 @@
+{
+    "name": "ContactMessage",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Nom du contact"
+        },
+        "email": {
+            "type": "string",
+            "description": "Email du contact"
+        },
+        "subject": {
+            "type": "string",
+            "description": "Sujet du message"
+        },
+        "message": {
+            "type": "string",
+            "description": "Contenu du message"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "new",
+                "read",
+                "replied"
+            ],
+            "default": "new",
+            "description": "Statut du message"
+        }
+    },
+    "required": [
+        "name",
+        "email",
+        "message"
+    ]
+}

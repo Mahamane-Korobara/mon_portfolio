@@ -1,0 +1,49 @@
+{
+    "name": "Experience",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "Titre du poste"
+        },
+        "company": {
+            "type": "string",
+            "description": "Nom de l'entreprise"
+        },
+        "location": {
+            "type": "string",
+            "description": "Lieu"
+        },
+        "start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date de d\u00e9but"
+        },
+        "end_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date de fin (vide si en cours)"
+        },
+        "current": {
+            "type": "boolean",
+            "default": false,
+            "description": "Poste actuel"
+        },
+        "description": {
+            "type": "string",
+            "description": "Description des missions"
+        },
+        "achievements": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "R\u00e9alisations cl\u00e9s"
+        }
+    },
+    "required": [
+        "title",
+        "company",
+        "start_date"
+    ]
+}

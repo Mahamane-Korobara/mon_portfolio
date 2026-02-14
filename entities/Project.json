@@ -1,0 +1,61 @@
+{
+    "name": "Project",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "Titre du projet"
+        },
+        "description": {
+            "type": "string",
+            "description": "Description d\u00e9taill\u00e9e du projet"
+        },
+        "short_description": {
+            "type": "string",
+            "description": "Description courte pour les cartes"
+        },
+        "image_url": {
+            "type": "string",
+            "description": "URL de l'image principale"
+        },
+        "technologies": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Technologies utilis\u00e9es"
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "web",
+                "mobile",
+                "design",
+                "fullstack",
+                "api"
+            ],
+            "description": "Cat\u00e9gorie du projet"
+        },
+        "github_url": {
+            "type": "string",
+            "description": "Lien GitHub"
+        },
+        "live_url": {
+            "type": "string",
+            "description": "Lien vers le site en ligne"
+        },
+        "featured": {
+            "type": "boolean",
+            "default": false,
+            "description": "Projet mis en avant"
+        },
+        "order": {
+            "type": "number",
+            "description": "Ordre d'affichage"
+        }
+    },
+    "required": [
+        "title",
+        "description"
+    ]
+}
