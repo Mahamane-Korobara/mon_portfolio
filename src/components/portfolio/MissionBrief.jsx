@@ -140,10 +140,6 @@ export default function MissionBrief({ profile, onStart }) {
                 →
               </motion.div>
             </Button>
-            
-            <p className="text-slate-500 text-sm mt-6">
-              Cliquez pour commencer votre exploration interactive
-            </p>
           </motion.div>
 
           {/* Scroll Indicator */}
@@ -153,14 +149,6 @@ export default function MissionBrief({ profile, onStart }) {
             transition={{ delay: 1.5 }}
             className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
           >
-            <motion.div
-              animate={{ y: [0, 15, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="text-slate-600 flex flex-col items-center gap-2"
-            >
-              <span className="text-xs">ou descendez pour explorer</span>
-              <ArrowDown className="w-5 h-5" />
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>
